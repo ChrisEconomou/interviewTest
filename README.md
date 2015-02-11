@@ -10,5 +10,6 @@ Test spec:  See the included screenshots of a profile page. What the developer n
 6. Items need not be clickable, however if time permits  clickable states on the UI   states as per Material guidelines would be a nice to have.  
 7. Tests around the parsing and business logic is a nice to have  
 8. We will take into consideration usage of styles and theme components so as to   make the styling modular  
-9. We will also take into consideration the architecture of the app concerning   separation of UI layer from the data model.  10. Suggestions on improvements to your implementation as well as the UI will be   taken onboard  
+9. We will also take into consideration the architecture of the app concerning   separation of UI layer from the data model.
+10. Suggestions on improvements to your implementation as well as the UI will be   taken onboard
 11. Colours are not important, we can however provide the basic colour spec of the   app if required.
