@@ -1,6 +1,8 @@
 # interviewTest
 
-Test spec:  See the included screenshots of a profile page. What the developer needs to do is   implement the same thing using: 1. The screen must be designed using Google’s Material Design guidelines.  
+Test spec:  See the included screenshots of a profile page. What the developer needs to do is   implement the same thing using:
+
+1. The screen must be designed using Google’s Material Design guidelines.  
 2. The GridView/Listview implementation must use a RecyclerView   
 3. The header is the same for both lists which are swipeable from left to right, the   header scrolls up with the list as seen in the screenshots  
 4. The included json files are to be parsed for data, the header data is contained in   the header.json and  the products.json file may be used for both likes and selling   products.   
