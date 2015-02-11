@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/christosoikonomou/github/sampleProject/app/build/intermediates/exploded-aar/sampleProject/viewPagerIndicator/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="0b8ed05164badce6e5df8923632a172a238c1107">
+        <dex dex="/Users/christosoikonomou/github/sampleProject/app/build/intermediates/pre-dexed/debug/classes-f6fffab271a058fc9f9b720735ba778a8c95805b.jar" />
+    </item>
+
+</items>
