@@ -2,24 +2,26 @@ package com.chriseconomou.depop.util;
 
 import android.content.Context;
 
+import com.chriseconomou.depop.data.ProductsResponse;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import retrofit.client.Header;
-import retrofit.client.Response;
-import retrofit.mime.TypedInput;
 
 /**
  * Utils for obtaining mock json data.
  */
 public class MockDataUtils {
+
+
+
+
+    public static  ProductsResponse getCategoriesMenResponse(Context context) {
+        return ( ProductsResponse) getMockResponse(context, "products_custom.json",  ProductsResponse.class);
+    }
+
 
     private static Object getMockResponse(Context context, String fileName, Class className) {
         String jsonString = getJsonString(context, fileName);

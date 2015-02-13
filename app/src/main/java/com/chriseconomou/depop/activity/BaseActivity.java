@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
 import com.chriseconomou.depop.application.SampleApplication;
-import com.chriseconomou.depop.error.ErrorManager;
-import com.chriseconomou.depop.network.Api;
 
 import butterknife.ButterKnife;
 
@@ -15,8 +13,7 @@ import butterknife.ButterKnife;
  */
 public abstract class BaseActivity extends ActionBarActivity {
 
-    protected Api mApi;
-    private ErrorManager mErrorManager;
+
 
 
     @Override
@@ -27,8 +24,7 @@ public abstract class BaseActivity extends ActionBarActivity {
         }
         ButterKnife.inject(this);
         SampleApplication app = ((SampleApplication) getApplication());
-        mApi = app.getApi();
-        mErrorManager = app.getErrorManager();
+
     }
 
     protected abstract int getLayoutId();
@@ -53,8 +49,5 @@ public abstract class BaseActivity extends ActionBarActivity {
     }
 
 
-    public void handleError(Throwable throwable) {
-        mErrorManager.handleError(mErrorManager.getError(throwable), this);
-    }
 }
 

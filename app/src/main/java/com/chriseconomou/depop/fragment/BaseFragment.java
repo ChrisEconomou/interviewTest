@@ -9,12 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.chriseconomou.depop.application.SampleApplication;
-import com.chriseconomou.depop.error.ErrorManager;
-import com.chriseconomou.depop.network.Api;
-import com.chriseconomou.depop.util.Utils;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.ButterKnife;
 
@@ -25,20 +19,16 @@ import butterknife.ButterKnife;
 public abstract class BaseFragment extends Fragment {
 
 
-    protected Api mApi;
 
-    private ErrorManager mErrorManager;
     private SampleApplication mSampleApplication;
-    private List<rx.Subscription> mSubscriptions;
+
 
 
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         mSampleApplication = (SampleApplication) activity.getApplication();
-        mApi = mSampleApplication.getApi();
-        mErrorManager = mSampleApplication.getErrorManager();
-        mSubscriptions = new ArrayList<rx.Subscription>();
+
 
     }
 
@@ -49,28 +39,12 @@ public abstract class BaseFragment extends Fragment {
         return rootView;
     }
 
-    @Override
-    public void onDestroy() {
-        Utils.unsubscribeSubscriptions(mSubscriptions);
-        super.onDestroy();
-
-    }
 
     protected abstract int getLayoutId();
 
     protected abstract void initializeViews(Bundle savedInstanceState);
 
-    public void handleError(Throwable throwable) {
-            mErrorManager.handleError(mErrorManager.getError(throwable), getActivity());
-    }
 
-    protected void addSubscription(rx.Subscription subscription) {
-        mSubscriptions.add(subscription);
-    }
-
-    protected ErrorManager getErrorManager() {
-        return mErrorManager;
-    }
 
     protected SampleApplication getApplication() {
         return mSampleApplication;

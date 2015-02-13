@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/products_image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/default_margin_medium">
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:id="@+id/header_image_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/product_image_height"
+        android:src="@drawable/logo"
+        android:paddingRight="@dimen/default_margin_medium" />
+
+    <TextView
+        android:text="Aksahay Dashrath"
+        android:layout_toRightOf="@+id/header_image_profile"
+        android:id="@+id/header_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="27"
+        android:layout_alignLeft="@+id/header_text_name"
+        android:layout_below="@+id/header_text_name"
+        android:id="@+id/header_text_following_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/following"
+        android:layout_alignLeft="@+id/header_text_following_value"
+        android:layout_below="@+id/header_text_following_value"
+        android:id="@+id/header_text_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="27"
+        android:layout_toRightOf="@+id/header_text_name"
+        android:layout_below="@+id/header_text_name"
+        android:id="@+id/header_text_followers_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/followers"
+        android:layout_alignLeft="@+id/header_text_followers_value"
+        android:layout_below="@+id/header_text_followers_value"
+        android:id="@+id/header_text_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="2 reviews"
+        android:layout_alignLeft="@+id/header_text_following_value"
+        android:layout_below="@+id/header_text_followers"
+        android:id="@+id/header_text_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="2 reviews"
+        android:layout_alignLeft="@+id/header_image_profile"
+        android:layout_below="@+id/header_image_profile"
+        android:id="@+id/header_text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="http://ww.goggle.com"
+        android:layout_alignLeft="@+id/header_image_profile"
+        android:layout_below="@+id/header_text_description"
+        android:id="@+id/header_text_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

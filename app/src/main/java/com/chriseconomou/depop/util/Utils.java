@@ -9,9 +9,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.List;
 
-import rx.Subscription;
+
 
 
 public class Utils {
@@ -31,12 +30,7 @@ public class Utils {
         return null;
     }
 
-    public static void unsubscribeSubscriptions(List<Subscription> subscriptions) {
-        for (Subscription subscription : subscriptions) {
-            subscription.unsubscribe();
-        }
-        subscriptions.clear();
-    }
+
 
     public static void replaceFragment(FragmentActivity fragmentActivity, int containerId, Fragment fragment, String fragmentTag, boolean hasAnimation) {
         if (hasAnimation) {
