@@ -8,9 +8,16 @@ import com.chriseconomou.depop.fragment.MainFragment;
 import com.chriseconomou.depop.util.Utils;
 
 public class MainActivity extends BaseToolbarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        initializeViews(savedInstanceState);
+    }
+
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_main;
+        return R.layout.activity_main;
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.chriseconomou.depop.util;
 
 import android.content.Context;
 
+import com.chriseconomou.depop.data.HeaderResponse;
 import com.chriseconomou.depop.data.ProductsResponse;
 
 import java.io.BufferedReader;
@@ -16,10 +17,12 @@ import java.io.InputStreamReader;
 public class MockDataUtils {
 
 
+    public static HeaderResponse getHeaderResponse(Context context) {
+        return (HeaderResponse) getMockResponse(context, "header.json", HeaderResponse.class);
+    }
 
-
-    public static  ProductsResponse getCategoriesMenResponse(Context context) {
-        return ( ProductsResponse) getMockResponse(context, "products_custom.json",  ProductsResponse.class);
+    public static ProductsResponse getCategoriesMenResponse(Context context) {
+        return (ProductsResponse) getMockResponse(context, "products_custom.json", ProductsResponse.class);
     }
 
 

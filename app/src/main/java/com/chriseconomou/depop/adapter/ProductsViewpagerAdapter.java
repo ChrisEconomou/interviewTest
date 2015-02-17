@@ -22,6 +22,7 @@ import butterknife.InjectView;
 public class ProductsViewpagerAdapter extends PagerAdapter {
 
     private static final int COUNT = 2;
+    private static final int SPAN_COUNT = 3;
 
     private ProductsResponse mProductsResponse;
 
@@ -50,14 +51,22 @@ public class ProductsViewpagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public int getCount() {
-        return COUNT;
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        View view = (View) object;
+        container.removeView(view);
+        mViews.remove(position);
     }
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return false;
+        return view.equals(object);
     }
+
+    @Override
+    public int getCount() {
+        return COUNT;
+    }
+
 
     @Override
     public CharSequence getPageTitle(int position) {
@@ -75,7 +84,7 @@ public class ProductsViewpagerAdapter extends PagerAdapter {
     private void populateRecyclerView(RecyclerView recyclerView, List<Product> products) {
         ProductsAdapter adapter = new ProductsAdapter(mContext, products);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new GridLayoutManager(mContext, 3));
+        recyclerView.setLayoutManager(new GridLayoutManager(mContext, getSpanCount()));
     }
 
     public class ViewHolder {
@@ -86,5 +95,10 @@ public class ProductsViewpagerAdapter extends PagerAdapter {
         public ViewHolder(View view) {
             ButterKnife.inject(this, view);
         }
+    }
+
+
+    public int getSpanCount() {
+        return SPAN_COUNT;
     }
 }
