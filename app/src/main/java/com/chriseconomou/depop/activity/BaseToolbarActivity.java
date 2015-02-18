@@ -15,14 +15,16 @@ import butterknife.InjectView;
  */
 public abstract class BaseToolbarActivity extends BaseActivity {
 
+    private static final float ELEVATION = 10.0f;
+
     @InjectView(R.id.toolbar)
     Toolbar mToolbar;
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setElevation(ELEVATION);
     }
 
     @Override
@@ -35,10 +37,6 @@ public abstract class BaseToolbarActivity extends BaseActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-
-
 
 
 }

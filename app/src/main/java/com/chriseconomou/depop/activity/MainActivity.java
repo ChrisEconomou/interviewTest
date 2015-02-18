@@ -22,6 +22,7 @@ public class MainActivity extends BaseToolbarActivity {
 
     @Override
     protected void initializeViews(Bundle savedInstanceState) {
+        getSupportActionBar().setTitle(getString(R.string.user_profile));
         Utils.addFragment(this, R.id.container, MainFragment.newInstance(), MainFragment.TAG, false);
     }
 }

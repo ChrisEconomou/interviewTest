@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.chriseconomou.depop.R;
@@ -29,6 +30,11 @@ public class MainFragment extends BaseFragment implements GetProductsListener, G
 
     public static String TAG = MainFragment.class.getSimpleName();
 
+
+    @InjectView(R.id.indicator)
+    TabPageIndicator mIndicator;
+    @InjectView(R.id.viewpager)
+    ViewPager mViewpager;
     @InjectView(R.id.header_image_profile)
     RoundedImageView mImageProfile;
     @InjectView(R.id.header_text_name)
@@ -40,17 +46,13 @@ public class MainFragment extends BaseFragment implements GetProductsListener, G
     TextView mTextFollowersValue;
 
     @InjectView(R.id.header_text_reviews)
-    TextView mHeaderTextReviews;
+    TextView mTextReviews;
     @InjectView(R.id.header_text_description)
-    TextView mHeaderTextDescription;
+    TextView mTextDescription;
     @InjectView(R.id.header_text_url)
-    TextView mHeaderTextUrl;
+    TextView mTextUrl;
     @InjectView(R.id.products_image)
-    ViewGroup mProductsImage;
-    @InjectView(R.id.indicator)
-    TabPageIndicator mIndicator;
-    @InjectView(R.id.viewpager)
-    ViewPager mViewpager;
+    RelativeLayout mProductsImage;
 
     private ProductsViewpagerAdapter mProductsViewpagerAdapter;
     private List<Product> mSellingProducts = new ArrayList<Product>();
@@ -76,7 +78,7 @@ public class MainFragment extends BaseFragment implements GetProductsListener, G
     protected void initializeViews(Bundle savedInstanceState) {
 
         onGetUserDetailsSuccesful(MockDataUtils.getHeaderResponse(getActivity()));
-        onGetProductsSuccesful(MockDataUtils.getCategoriesMenResponse(getActivity()));
+        onGetProductsSuccesful(MockDataUtils.getProductsResponse(getActivity()));
 
     }
 
@@ -87,7 +89,7 @@ public class MainFragment extends BaseFragment implements GetProductsListener, G
 
     @Override
     public void onGetProductsSuccesful(ProductsResponse productsResponse) {
-        mProductsViewpagerAdapter = new ProductsViewpagerAdapter(getActivity(), productsResponse.selling, productsResponse.liked, new String[]{"SELLING", "LIKED"});
+        mProductsViewpagerAdapter = new ProductsViewpagerAdapter(getActivity(), productsResponse.selling, productsResponse.liked, new String[]{getString(R.string.selling), getString(R.string.likes)});
         setViewPagerHeight(productsResponse.selling.size() >= productsResponse.liked.size() ? productsResponse.selling.size() : productsResponse.liked.size());
         mViewpager.setAdapter(mProductsViewpagerAdapter);
         mIndicator.setViewPager(mViewpager);
@@ -95,7 +97,7 @@ public class MainFragment extends BaseFragment implements GetProductsListener, G
 
     @Override
     public void onGetUserDetailsError(Throwable throwable) {
-
+//handle error
     }
 
     @Override
@@ -127,7 +129,10 @@ public class MainFragment extends BaseFragment implements GetProductsListener, G
             Picasso.with(getActivity()).load(headerResponse.picture).into(mImageProfile);
         }
         mTextName.setText(headerResponse.firstName + " " + headerResponse.lastName);
-        mTextFollowingValue.setText(headerResponse.followingCount);
-        mTextFollowersValue.setText(headerResponse.followersCount);
+        mTextFollowingValue.setText(headerResponse.followingCount.toString());
+        mTextFollowersValue.setText(headerResponse.followersCount.toString());
+        mTextDescription.setText(headerResponse.bio);
+        mTextUrl.setText(headerResponse.website);
+
     }
 }

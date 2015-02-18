@@ -37,4 +37,12 @@ public class HeaderResponse {
     @Expose
     @SerializedName("picture")
     public String picture;
+
+    @Expose
+    @SerializedName("bio")
+    public String bio;
+
+    @Expose
+    @SerializedName("website")
+    public String website;
 }

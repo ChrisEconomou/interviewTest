@@ -1,6 +1,8 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="default_margin_xxsmall">2dp</dimen>
+    <dimen name="default_margin_xsmall">8dp</dimen>
+    <dimen name="default_margin_small">12dp</dimen>
     <dimen name="default_margin_medium">16dp</dimen>
     <dimen name="default_margin_large">24dp</dimen>
 
@@ -8,7 +10,8 @@
     <dimen name="text_size">16sp</dimen>
     <dimen name="text_size_large">20sp</dimen>
     <dimen name="navigation_drawer_width">240dp</dimen>
-
+    <dimen name="header_image_height">120dp</dimen>
+    <dimen name="header_image_width">120dp</dimen>
     <dimen name="product_image_height">120dp</dimen>
     <dimen name="product_image_width">100dp</dimen>
 
