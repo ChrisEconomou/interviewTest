@@ -19,6 +19,7 @@
             android:configChanges="orientation"
             android:label="@string/app_name"
             android:launchMode="singleTask"
+
             android:parentActivityName="com.chriseconomou.depop.activity.MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data

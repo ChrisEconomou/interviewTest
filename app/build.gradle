@@ -1,33 +1,29 @@
 
-apply plugin: 'android'
-apply plugin: 'robolectric'
-apply plugin: 'idea'
+apply plugin: 'com.android.application'
+
+
 
 buildscript {
     repositories {
 
         jcenter()
+
     }
+
+
+
 }
 
 android {
-    packagingOptions {
-        exclude 'LICENSE.txt'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/NOTICE'
-    }
     compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.chriseconomou.sampleproject"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
-        testApplicationId "com.chriseconomou.depop"
-
     }
     buildTypes {
         release {
@@ -38,32 +34,39 @@ android {
 
 
 
-    productFlavors {
 
+    productFlavors {
+        robolectric {
+            targetSdkVersion 18
+        }
         dev {
             targetSdkVersion 21
         }
 
     }
-
 }
+
+
 
 dependencies {
 
-    compile 'com.android.support:appcompat-v7:21.0.2'
+    repositories {
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    }
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.android.support:recyclerview-v7:21.+'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.squareup.retrofit:retrofit:1.8.0'
     compile 'com.jakewharton:butterknife:6.0.0'
     compile 'joda-time:joda-time:2.6'
     compile 'com.squareup.picasso:picasso:2.4.0'
-    compile 'com.google.code.gson:gson:2.2.4'
-    compile 'com.android.support:support-v4:21.0.2'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+    testCompile 'org.robolectric:robolectric:2.4'
     compile project(':viewPagerIndicator')
-
-
 }
 
-idea {
-    module {
-        testOutputDir = file('build/test-classes/debug')
-    }
-}
+

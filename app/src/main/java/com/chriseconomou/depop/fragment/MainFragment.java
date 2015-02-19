@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.chriseconomou.depop.R;
@@ -41,18 +40,13 @@ public class MainFragment extends BaseFragment implements GetProductsListener, G
     TextView mTextName;
     @InjectView(R.id.header_text_following_value)
     TextView mTextFollowingValue;
-
     @InjectView(R.id.header_text_followers_value)
     TextView mTextFollowersValue;
-
-    @InjectView(R.id.header_text_reviews)
-    TextView mTextReviews;
     @InjectView(R.id.header_text_description)
     TextView mTextDescription;
     @InjectView(R.id.header_text_url)
     TextView mTextUrl;
-    @InjectView(R.id.products_image)
-    RelativeLayout mProductsImage;
+
 
     private ProductsViewpagerAdapter mProductsViewpagerAdapter;
     private List<Product> mSellingProducts = new ArrayList<Product>();

@@ -2,11 +2,46 @@
 <items version="2" >
 
     <item
-        jar="/Users/oikonomouc/Desktop/Activity/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jar="/Users/oikonomouc/Desktop/Activity/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-47d0a199dbfefc76b3a7e64e17b701081d7dc9eb.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/Desktop/Activity/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.1"
-        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/support-annotations-21.0.2-d3ce1e52d71985de112d46a19aab18aad1fb2f34.jar" />
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/support-annotations-21.0.3-47d0a199dbfefc76b3a7e64e17b701081d7dc9eb.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/classes-ecbaea3006ff4822edb0e738608965686927cbde.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/classes-dc77384ec1c861478ab4fa1f39d6ec25f056bd9d.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/classes-dc77384ec1c861478ab4fa1f39d6ec25f056bd9d.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-3568b583a550209447bf199b9be65c6696c43ef9.jar" />
     </item>
     <item
         jar="/Users/oikonomouc/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
@@ -16,18 +51,25 @@
         <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/picasso-2.4.0-3568b583a550209447bf199b9be65c6696c43ef9.jar" />
     </item>
     <item
-        jar="/Users/oikonomouc/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jar="/Users/oikonomouc/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/63735f48b82bcd24cdd33821342428252eb1ca5a/butterknife-6.1.0.jar"
         jumboMode="false"
-        revision="21.1.1"
-        sha1="a60a5e993c98c864010053cb901b7eab25306568">
-        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/gson-2.2.4-a97bcbabb9769da46b097571d376cfa03c66babb.jar" />
+        revision="21.1.2"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/butterknife-6.1.0-2d98f4c47eadacbc721a52129b31aa395a103760.jar" />
     </item>
     <item
-        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
+        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
-        revision="21.1.1"
-        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/classes-4d139411fb264439ee6861cd58dfa891d02eda59.jar" />
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/classes-ef6e57607860099c8253e882ec4ea6e5d148c966.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/gson-2.3.1-f35402f4009968a60cb95e64a852a8a6230ca85d.jar" />
     </item>
     <item
         jar="/Users/oikonomouc/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.0.0/3a10b25b6820e19102e118711afe6a66c0bae123/butterknife-6.0.0.jar"
@@ -44,25 +86,74 @@
         <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/joda-time-2.6-4e82002a92d2fd7bd6029ccfa35e2a3114fe4522.jar" />
     </item>
     <item
-        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
+        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.1"
-        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
-        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/classes-ecbaea3006ff4822edb0e738608965686927cbde.jar" />
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/classes-99e02cfa22d25cae5fe34142c0bd920f951c7b19.jar" />
     </item>
     <item
-        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.2/classes.jar"
+        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
-        revision="21.1.1"
-        sha1="4796f18d3750bf2bfa078407a94a7f9db35b440d">
-        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/classes-823bc54e1fa68c3e92324bdf1972eb89b5411a51.jar" />
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/classes-99e02cfa22d25cae5fe34142c0bd920f951c7b19.jar" />
     </item>
     <item
-        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jar="/Users/oikonomouc/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.6/5015880733b0bc0ce813a3ed5601064c1d413671/joda-time-2.6.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5015880733b0bc0ce813a3ed5601064c1d413671">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/joda-time-2.6-4e82002a92d2fd7bd6029ccfa35e2a3114fe4522.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/github/interviewTest/app/libs/FlurryAnalytics-5.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee10ddd768ed27510e47b14a4360d5646a6d853">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/FlurryAnalytics-5.1.0-b8e2937571da00873e7131d530a6c6e54054a656.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/github/interviewTest/app/libs/Android-BitmapCache-2.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c5135a2e9412b190de0510afca97b27489d9b00b">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/Android-BitmapCache-2.3-ea3ef754551fbc608105136808f62fb8a580b46b.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.8.0/a517f29ed06be2b2879524fcd94b6e9b36e2e0b5/retrofit-1.8.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a517f29ed06be2b2879524fcd94b6e9b36e2e0b5">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/retrofit-1.8.0-c1569dad53752ad176d314746de942b438109319.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.1"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/internal_impl-21.0.2-76ad76c0258ab00ff13f563dadd226907ccf635a.jar" />
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/internal_impl-21.0.3-1005bdaa60cd26e94bd069463a5ae653d0d79119.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-1005bdaa60cd26e94bd069463a5ae653d0d79119.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/dev/debug/gson-2.2.4-a97bcbabb9769da46b097571d376cfa03c66babb.jar" />
+    </item>
+    <item
+        jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/interviewTest/viewPagerIndicator/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7a46a580d60638bced6c4090a6c9e0fc5bcb3468">
+        <dex dex="/Users/oikonomouc/github/interviewTest/app/build/intermediates/pre-dexed/debug/classes-0e7f126acb5ed6ac3f2645d5179fc45462d02259.jar" />
     </item>
     <item
         jar="/Users/oikonomouc/github/interviewTest/app/build/intermediates/exploded-aar/interviewTest/viewPagerIndicator/unspecified/classes.jar"
